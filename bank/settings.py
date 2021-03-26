@@ -21,15 +21,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = '9op9va&oinx!@$)p78ht#n1zn%5dk3id^3ry!s@--o4+l149al'
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = '9op9va&oinx!@$)p78ht#n1zn%5dk3id^3ry!s@--o4+l149al'
+#SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-#DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False' 
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = False
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['https://git.heroku.com/afternoon-wave-76314.git', '127.0.0.1']
 
 
 # Application definition
@@ -142,10 +141,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media_cdn')
 
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = STATIC_ROOT  #. os.path.join(BASE_DIR, 'staticfiles')
+#STATIC_ROOT = BASE_DIR / 'staticfiles'  #. os.path.join(BASE_DIR, 'staticfiles')
 
 # The URL to use when referring to static files (where they will be served from)
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
