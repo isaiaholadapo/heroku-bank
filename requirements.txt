@@ -27,9 +27,9 @@ django-rest-swagger==2.2.0
 django-timezone-field==3.0
 djangorestframework==3.12.2
 filelock==3.0.12
-Fiona @ file:///G:/Fiona-1.8.18-cp39-cp39-win_amd64.whl
-GDAL @ file:///G:/GDAL-3.2.1-cp39-cp39-win_amd64.whl
-geopandas @ file:///G:/geopandas-0.8.2-py3-none-any.whl
+#Fiona 
+#GDAL 
+#geopandas 
 gunicorn==20.0.4
 idna==2.10
 importlib-metadata==3.7.2
